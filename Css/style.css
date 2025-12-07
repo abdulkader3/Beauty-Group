@@ -123,8 +123,236 @@
     border-top-left-radius: 16px ;
     border-bottom-right-radius: 16px ;
   }
+  .PageMenu{
+    border-top-right-radius: 0px ;
+    border-bottom-left-radius: 0px ;
+    border-top-left-radius: 16px ;
+    border-bottom-right-radius: 16px ;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-item.dropdown:hover .PageMenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 
   body{
     background: #000;
   }
 /* navbar */
+
+/* Sticky Navbar by SHANTO */
+.sticky-navbar {
+    position: fixed;
+    top: -100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #fde4e4 0%, #fff5e6 100%);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 1rem 0;
+    z-index: 999;
+    transition: top 0.3s ease;
+}
+
+.sticky-navbar.active {
+    top: 0;
+}
+
+.sticky-nav-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sticky-navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #d4a5a5 !important;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sticky-logo-placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.sticky-navbar-nav {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+}
+
+.sticky-nav-item {
+    position: relative;
+}
+
+.sticky-nav-link {
+    color: #333 !important;
+    margin: 0 1rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+
+.sticky-nav-link:hover {
+    color: #d4a5a5 !important;
+}
+
+.sticky-nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #d4a5a5;
+    transition: width 0.3s ease;
+}
+
+.sticky-nav-link:hover::after {
+    width: 100%;
+}
+
+.sticky-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fde4e4 0%, #fff5e6 100%);
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    min-width: 150px;
+}
+
+.sticky-nav-item.dropdown:hover .sticky-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sticky-dropdown-item {
+    color: #333 !important;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.sticky-dropdown-item:hover {
+    background-color: #fde4e4;
+    color: #d4a5a5 !important;
+}
+
+.sticky-navbar-icons {
+    display: flex;
+    gap: 1.5rem;
+    border-left: 1px solid #ddd;
+    padding-left: 2rem;
+    white-space: nowrap;
+}
+
+/* Responsive Sticky Navbar */
+@media (max-width: 991px) {
+    .sticky-nav-content {
+        padding: 0 1rem;
+        gap: 1rem;
+    }
+    
+    .sticky-navbar-nav {
+        display: none;
+    }
+    
+    .sticky-navbar-icons {
+        border-left: none;
+        padding-left: 0;
+    }
+    
+    .sticky-nav-link {
+        margin: 0;
+    }
+}
+/* Sticky Navbar by SHANTO */
+
+
+/* section1 by SHANTO */
+.section1{
+    width: 100%;
+    height: 100vh;
+    background: #d4a5a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section1 by SHANTO */
+
+/* section1 by SHANTO */
+.section2{
+    width: 100%;
+    height: 100vh;
+    background: #e5ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section1 by SHANTO */
+
+/* section1 by SHANTO */
+.section3{
+    width: 100%;
+    height: 100vh;
+    background: #d17d00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section1 by SHANTO */
+
+/* section1 by SHANTO */
+.section4{
+    width: 100%;
+    height: 100vh;
+    background: #ffc400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section1 by SHANTO */
+
+/* section1 by SHANTO */
+.section5{
+    width: 100%;
+    height: 100vh;
+    background: #c71818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* section1 by SHANTO */
