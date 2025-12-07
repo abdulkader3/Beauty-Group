@@ -146,6 +146,25 @@
     color: #fff;
 }
 
+
+/* : blog-details */
+.top-header{
+    background: #ff6493;
+}
+.pink-focus:focus {
+    border-color: #ff6493 !important; 
+    box-shadow: 0 0 0 0.25rem rgba(255, 100, 147, 0.4) !important; 
+    outline: none !important; 
+}
+
+.blog-content img.post-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+
 /* ========================= BACK TO TOP ========================= */
 
 #backToTop {
