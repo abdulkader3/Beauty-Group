@@ -63,6 +63,10 @@
   .testimonials .carousel-indicators {
     bottom: -40px !important;
   }
+
+  .post-img {
+    height: 200px;
+  }
 }
 
 /* Small Mobiles (max-width: 576px) */
@@ -94,4 +98,106 @@
     width: 10px;
     height: 10px;
   }
+}
+
+
+
+
+/* ========== Blog Responsive ========== */
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+
+    .post-card {
+        padding: 10px;
+    }
+
+    .post-img {
+        height: 220px;
+    }
+
+    .post-title {
+        font-size: 16px;
+    }
+
+    .post-text {
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    .post-date,
+    .post-comments {
+        font-size: 13px;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .post-img {
+        height: 200px;
+    }
+
+    .post-card {
+        margin-bottom: 20px;
+    }
+
+    .post-title {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .post-text {
+        font-size: 13px;
+    }
+
+    .post-slider-controls {
+        gap: 10px;
+    }
+
+    .slide-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
+
+/* Small Mobiles (max-width: 576px) */
+@media (max-width: 576px) {
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .post-img {
+        height: 170px;
+    }
+
+    .post-title {
+        font-size: 14px;
+    }
+
+    .post-text {
+        font-size: 12px;
+        padding: 0 5px;
+    }
+
+    .post-date,
+    .post-comments {
+        font-size: 12px;
+    }
+
+    .slide-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
 }
