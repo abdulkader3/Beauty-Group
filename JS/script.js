@@ -1,15 +1,4 @@
-// Dropdown hover behavior
-document.addEventListener('DOMContentLoaded', function() {
-    const dropdownToggle = document.getElementById('pagesDropdown');
-    const dropdownMenu = document.querySelector('.PageMenu');
-    
-    if (dropdownToggle && dropdownMenu) {
-        // Prevent dropdown from toggling on click
-        dropdownToggle.addEventListener('click', function(e) {
-            e.preventDefault();
-        });
-    }
-});
+
 
 // Sticky Navbar Scroll Behavior by SHANTO
 window.addEventListener('scroll', function() {
