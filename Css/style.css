@@ -426,8 +426,9 @@
 }
 
 .massage-card {
-    background: #ff6b9d;
-    border-radius: 20px;
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
     padding: 40px 30px;
     text-align: center;
     height: 100%;
@@ -442,8 +443,15 @@
 
 .card-icon {
     font-size: 3.5rem;
-    color: white;
+    color: #d637cb;
     margin-bottom: 20px;
+}
+
+.imageClass{
+    background: linear-gradient(90deg,rgba(251, 127, 200, 1) 0%, rgba(239, 87, 122, 1) 100%);
+    padding: 30px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px        ;
 }
 
 .card-title {
@@ -771,4 +779,7 @@
 }
 
 /* ===== END RESPONSIVE SLIDER ===== */
+
+
+
 
