@@ -421,11 +421,44 @@
 /* section1 by SHANTO */
 .section2{
     width: 100%;
-    height: 100vh;
-    background: #e5ff00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: #f8f8f8;
+    padding: 60px 0;
+}
+
+.massage-card {
+    background: #ff6b9d;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.massage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
 }
 /* section1 by SHANTO */
 
