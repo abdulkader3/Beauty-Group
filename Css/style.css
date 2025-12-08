@@ -461,3 +461,92 @@
     align-items: center;
 }
 /* section1 by SHANTO */
+
+
+
+.image-of-flower{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-140%, 15%);
+    background-color: transparent !important;
+    animation: rotateFlower 10s linear infinite;
+}
+
+.image-of-flower .flower{
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+}
+
+@keyframes rotateFlower {
+    0% {
+        transform: translate(-140%, 15%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-140%, 15%) rotate(360deg);
+    }
+}
+
+/* Falling Animation - Leaf-like motion */
+@keyframes fall {
+    0% {
+        top: -100px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        top: 100vh;
+        opacity: 0.3;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(30px) rotate(5deg);
+    }
+    50% {
+        transform: translateX(-30px) rotate(-5deg);
+    }
+    75% {
+        transform: translateX(20px) rotate(3deg);
+    }
+}
+
+.falling-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: transparent !important;
+}
+
+.falling-image {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: transparent !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.falling-image-1 { animation: fall 8s linear infinite, sway 4s ease-in-out infinite; left: 10%; animation-delay: 0s; }
+.falling-image-2 { animation: fall 10s linear infinite, sway 5s ease-in-out infinite; left: 20%; animation-delay: 1s; }
+.falling-image-3 { animation: fall 9s linear infinite, sway 4.5s ease-in-out infinite; left: 30%; animation-delay: 0.5s; }
+.falling-image-4 { animation: fall 11s linear infinite, sway 5.5s ease-in-out infinite; left: 40%; animation-delay: 2s; }
+.falling-image-5 { animation: fall 9.5s linear infinite, sway 4s ease-in-out infinite; left: 50%; animation-delay: 1.5s; }
+.falling-image-6 { animation: fall 10.5s linear infinite, sway 5s ease-in-out infinite; left: 60%; animation-delay: 0.8s; }
+.falling-image-7 { animation: fall 8.5s linear infinite, sway 4.5s ease-in-out infinite; left: 70%; animation-delay: 1.2s; }
+.falling-image-8 { animation: fall 10s linear infinite, sway 5.5s ease-in-out infinite; left: 80%; animation-delay: 2.5s; }
+.falling-image-9 { animation: fall 9.5s linear infinite, sway 4s ease-in-out infinite; left: 90%; animation-delay: 1.8s; }
