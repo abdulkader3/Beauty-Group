@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: 0;
@@ -6,80 +6,124 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* ========================= TESTIMONIALS ========================= */
 
 .testimonials {
-  width: 100%;
-  background: url("../Photos/testimonial.webp") center/cover no-repeat;
-  height: 600px;
+    width: 100%;
+    background: url("../Photos/testimonial.webp") center/cover no-repeat;
+    height: 600px;
 }
 
 .testimonial-item {
-  text-align: center;
-  max-width: 800px;
-  margin: 90px auto 30px;
-  color: #000;
+    text-align: center;
+    max-width: 800px;
+    margin: 90px auto 30px;
+    color: #000;
 }
 
 .testimonial-photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: auto;
-  background-size: cover;
-  background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Alada photo class */
-.photo1 { background-image: url("../Photos/client-1_200x200.avif"); }
-.photo2 { background-image: url("../Photos/client-2_200x200.webp"); }
-.photo3 { background-image: url("../Photos/client-3_200x200.avif"); }
-
-.testimonial-item p {
-  letter-spacing: 0.5px;
-  line-height: 1.8;
-  font-size: 18px;
+.photo1 {
+    background-image: url("../Photos/client-1_200x200.avif");
 }
 
-.text-clr{
+.photo2 {
+    background-image: url("../Photos/client-2_200x200.webp");
+}
+
+.photo3 {
+    background-image: url("../Photos/client-3_200x200.avif");
+}
+
+.testimonial-item p {
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.text-clr {
     color: #e49814;
     font-size: 16px;
 }
 
 .star-rating i {
-  color: #e49814;
-  font-size: 15px;
-  margin: 0 2px;
+    color: #e49814;
+    font-size: 15px;
+    margin: 0 2px;
 }
 
 /* Move indicators to bottom */
 .testimonials .carousel-indicators {
-  bottom: -70px !important;    
+    bottom: -70px !important;
 }
 
 .testimonials .carousel-indicators button {
-  width: 12px;
-  height: 12px;
-  background-color: #c7c7c7 !important;
-  border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #c7c7c7 !important;
+    border-radius: 50%;
 }
 
 .testimonials .carousel-indicators .active {
-  background-color: #f7c02b !important;
+    background-color: #f7c02b !important;
+}
+.testimonial-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #f26290;
+
 }
 
 /* ========================= RECENT POSTS ========================= */
 
 .section-subtitle {
     font-size: 16px;
-    color: #e06e9f;
 }
 
 .section-title {
     font-size: 32px;
     font-weight: 600;
+    color: #f26290;
+
+}
+.section-title {
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 8px;   
+    cursor: pointer;        
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%); 
+    width: 30%;               
+    height: 2px;
+    background-color: #ff6493;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+    width: 100%; 
+}
+
+.h_clr {
+    color: #f26290;
+
 }
 
 .post-card {
@@ -104,7 +148,7 @@
 .post-date {
     margin-top: 10px;
     font-size: 14px;
-    color: #e06e9f;
+    color: #f26290;
 }
 
 .post-text {
@@ -116,7 +160,7 @@
 
 .post-comments {
     margin-top: 10px;
-    color: #e06e9f;
+    color: #f26290;
     font-size: 14px;
 }
 
@@ -148,18 +192,22 @@
 
 
 /* : blog-details */
-.top-header{
-    background: #ff6493;
+
+.pink-focus {
+    padding-top: 13px !important;
+    padding-bottom: 13px !important;
 }
+
 .pink-focus:focus {
-    border-color: #ff6493 !important; 
-    box-shadow: 0 0 0 0.25rem rgba(255, 100, 147, 0.4) !important; 
-    outline: none !important; 
+    border-color: #ff6493 !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
+
 
 .blog-content img.post-img {
     width: 100%;
-    height: auto;
+    height: 500px;
     margin-bottom: 1.5rem;
     border-radius: 10px;
 }
@@ -188,4 +236,3 @@
 #backToTop:hover {
     background: #e04379;
 }
-
