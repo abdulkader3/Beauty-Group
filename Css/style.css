@@ -561,3 +561,181 @@
 .falling-image-18 { animation: fall 8.9s linear infinite, sway 4.9s ease-in-out infinite; left: 90%; animation-delay: 0.4s; }
 .falling-image-19 { animation: fall 10.6s linear infinite, sway 5.4s ease-in-out infinite; left: 95%; animation-delay: 2.3s; }
 
+/* ===== RESPONSIVE SLIDER FOR TABLET AND MOBILE ===== */
+
+/* Tablet Devices (768px to 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .section1 {
+        height: 80vh;
+    }
+    
+    .navbarMy {
+        margin-top: 0;
+    }
+    
+    .section1 .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+    
+    .section1 .carousel-caption p {
+        font-size: 0.9rem;
+    }
+    
+    .image-of-flower {
+        width: 250px;
+        height: 250px;
+        transform: translate(-120%, 20%);
+    }
+    
+    .section1 .carousel-indicators button {
+        width: 10px;
+        height: 10px;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0 0.75rem;
+        font-size: 0.85rem;
+    }
+    
+    .navbar-brand {
+        margin-right: 1.5rem;
+    }
+}
+
+/* Mobile Devices (Below 768px) */
+@media (max-width: 767px) {
+    .section1 {
+        height: 70vh;
+    }
+    
+    .section1 .carousel-caption {
+        padding: 2rem 1rem;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    }
+    
+    .section1 .carousel-caption h5 {
+        font-size: 1.25rem;
+        margin: 0 0 0.25rem 0;
+    }
+    
+    .section1 .carousel-caption p {
+        font-size: 0.85rem;
+        margin: 0;
+    }
+    
+    .image-of-flower {
+        width: 180px;
+        height: 180px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.7;
+    }
+    
+    .falling-image {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .section1 .carousel-control-prev,
+    .section1 .carousel-control-next {
+        width: 40px;
+        opacity: 0.7;
+    }
+    
+    .section1 .carousel-indicators {
+        bottom: 15px;
+    }
+    
+    .section1 .carousel-indicators button {
+        width: 8px;
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .section1 .carousel-indicators button.active {
+        background-color: #d4a5a5;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .navbar-brand {
+        margin-right: 1rem;
+    }
+    
+    .navbar-icons {
+        margin-left: 0 !important;
+        border-left: none !important;
+        padding-left: 0 !important;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid #ddd;
+    }
+}
+
+/* Extra Small Devices (Below 576px) */
+@media (max-width: 575px) {
+    .section1 {
+        height: 60vh;
+    }
+    
+    .section1 .carousel-caption {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .section1 .carousel-caption h5 {
+        font-size: 1rem;
+        margin-bottom: 0.15rem;
+    }
+    
+    .section1 .carousel-caption p {
+        font-size: 0.75rem;
+    }
+    
+    .image-of-flower {
+        width: 130px;
+        height: 130px;
+        opacity: 0.6;
+    }
+    
+    .falling-image {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .section1 .carousel-control-prev,
+    .section1 .carousel-control-next {
+        width: 30px;
+        opacity: 0.6;
+    }
+    
+    .section1 .carousel-indicators {
+        bottom: 10px;
+    }
+    
+    .section1 .carousel-indicators button {
+        width: 7px;
+        height: 7px;
+        margin: 0 4px;
+    }
+    
+    .navbar {
+        padding: 0.75rem 0;
+        margin-top: 10px;
+    }
+    
+    .navbar-brand {
+        margin-right: 0.5rem;
+    }
+    
+    .logo-placeholder {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ===== END RESPONSIVE SLIDER ===== */
+
