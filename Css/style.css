@@ -3,6 +3,7 @@
     background: #fff !important;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     padding: 1rem 0;
+    margin-top: 20px;
 }
 
 .navbar-brand {
@@ -96,6 +97,103 @@
     font-size: 0.7rem;
 }
 
+/* Section 1 - Full Height Slider */
+.section1 {
+    width: 100%;
+    height: 100vh;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden;
+    position: relative;
+}
+
+.section1 .carousel {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section1 .carousel-inner {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section1 .carousel-item {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.section1 .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+/* Carousel Fade Animation */
+.section1 .carousel-fade .carousel-item {
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.section1 .carousel-fade .carousel-item.active {
+    opacity: 1;
+}
+
+.section1 .carousel-caption {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 1rem;
+    margin: 0;
+}
+
+.section1 .carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.5rem 0;
+}
+
+.section1 .carousel-caption p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 0;
+}
+
+.section1 .carousel-control-prev,
+.section1 .carousel-control-next {
+    width: 5%;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.section1 .carousel-control-prev:hover,
+.section1 .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.section1 .carousel-indicators button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.section1 .carousel-indicators button.active {
+    background-color: #d4a5a5;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
     .navbar-icons {
@@ -116,12 +214,19 @@
 
 /* navbar */
   .navbarMy{
-    margin-top: 50px;
+    margin-top: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
   }
 
   .navbar{
     border-top-left-radius: 16px ;
     border-bottom-right-radius: 16px ;
+    background: #fff !important;
   }
   .PageMenu{
     border-top-right-radius: 0px ;
@@ -305,10 +410,11 @@
 .section1{
     width: 100%;
     height: 100vh;
-    background: #d4a5a5;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 /* section1 by SHANTO */
 

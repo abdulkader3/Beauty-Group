@@ -1,4 +1,25 @@
-
+// Initialize Carousel with Auto-slide
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderCarousel = document.getElementById('sliderCarousel');
+    
+    if (sliderCarousel) {
+        // Initialize Bootstrap carousel with auto-slide
+        const carousel = new bootstrap.Carousel(sliderCarousel, {
+            interval: 5000,  // 5 seconds auto-slide
+            ride: 'carousel',
+            pause: false  // Keep sliding even on hover
+        });
+        
+        // Handle indicator clicks for instant response
+        const indicators = sliderCarousel.querySelectorAll('.carousel-indicators button');
+        indicators.forEach((button, index) => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                carousel.to(index);
+            });
+        });
+    }
+});
 
 // Sticky Navbar Scroll Behavior by SHANTO
 window.addEventListener('scroll', function() {
