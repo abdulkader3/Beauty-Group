@@ -1021,3 +1021,101 @@
 #backToTop:hover {
     background: #e04379;
 }
+
+
+/* ========================= ABOUT US SECTION ========================= */
+
+.about-us-section {
+    background-color: #f9f3f0;
+    padding: 80px 0;
+}
+
+.about-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image-placeholder {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    background-color: #e8d5d0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 14px;
+    position: relative;
+}
+
+.about-content {
+    padding-left: 40px;
+}
+
+.about-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #ff6493;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.about-title-underline {
+    width: 60px;
+    height: 3px;
+    background-color: #ff6493;
+    margin-bottom: 25px;
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #888;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.about-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ff6493;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.about-btn:hover {
+    background-color: #e04379;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-content {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-image-placeholder {
+        height: 300px;
+        max-width: 100%;
+    }
+
+    .about-us-section {
+        padding: 50px 0;
+    }
+}
