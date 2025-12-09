@@ -485,7 +485,7 @@
 .section4{
     width: 100%;
     height: 100vh;
-    background: #ffc400;
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1117,5 +1117,241 @@
 
     .about-us-section {
         padding: 50px 0;
+    }
+}
+
+/* ========================= FOOTER STYLING ========================= */
+.footer-section {
+    background: linear-gradient(135deg, #ff5e7e 0%, #ff5e7e 100%);
+    padding: 80px 20px 80px 20px;
+    text-align: center;
+    position: relative;
+    overflow: visible;
+}
+
+/* Wave Animation Container */
+.wave-container {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    height: 100px;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+}
+
+.wave {
+    width: 200%;
+    height: 100%;
+    position: relative;
+    display: block;
+}
+
+.wave-path {
+    animation: waveAnimation 10s linear infinite;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.08));
+}
+
+.wave-path-2 {
+    animation: waveAnimation 10s linear infinite;
+    animation-delay: -5s;
+}
+
+
+
+@keyframes waveAnimation {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    50% {
+        transform: translateX(-25%) translateY(-5px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.footer-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    display: none;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Social Media Icons */
+.footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.facebook-icon {
+    color: #3b5998;
+}
+
+.facebook-icon:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.pinterest-icon {
+    color: #e60023;
+}
+
+.pinterest-icon:hover {
+    background-color: #e60023;
+    color: white;
+}
+
+.instagram-icon {
+    color: #E4405F;
+}
+
+.instagram-icon:hover {
+    background-color: #E4405F;
+    color: white;
+}
+
+/* Footer Navigation Links */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.footer-link:hover {
+    opacity: 0.8;
+}
+
+.footer-link:hover::after {
+    width: 100%;
+}
+
+/* Footer Copyright */
+.footer-copyright {
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-section {
+        padding: 60px 20px;
+    }
+
+    .footer-container {
+        gap: 30px;
+    }
+
+    .footer-social-icons {
+        gap: 20px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+
+    .footer-nav {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer-link {
+        font-size: 0.9rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 50px 15px;
+    }
+
+    .footer-social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .footer-nav {
+        gap: 15px;
+    }
+
+    .footer-link {
+        font-size: 0.85rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.8rem;
     }
 }

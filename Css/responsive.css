@@ -215,4 +215,14 @@
         height: 32px;
         font-size: 14px;
     }
+
+    /* Faster wave animation for mobile */
+    .wave-path {
+        animation: waveAnimation 5s linear infinite !important;
+    }
+
+    .wave-path-2 {
+        animation: waveAnimation 5s linear infinite !important;
+        animation-delay: -2.5s !important;
+    }
 }
