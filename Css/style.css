@@ -204,7 +204,7 @@
         padding-top: 1rem;
         border-top: 1px solid #ddd;
     }
-    
+
     .navbar-nav .nav-link {
         margin: 0.5rem 0;
     }
@@ -213,7 +213,7 @@
 
 
 /* navbar */
-  .navbarMy{
+.navbarMy {
     margin-top: 0px;
     position: absolute;
     top: 0;
@@ -221,31 +221,32 @@
     right: 0;
     width: 100%;
     z-index: 100;
-  }
+}
 
-  .navbar{
-    border-top-left-radius: 16px ;
-    border-bottom-right-radius: 16px ;
+.navbar {
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     background: #fff !important;
-  }
-  .PageMenu{
-    border-top-right-radius: 0px ;
-    border-bottom-left-radius: 0px ;
-    border-top-left-radius: 16px ;
-    border-bottom-right-radius: 16px ;
+}
+
+.PageMenu {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-  }
+}
 
-  .nav-item.dropdown:hover .PageMenu {
+.nav-item.dropdown:hover .PageMenu {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
-  }
+}
 
-  /* body{
+/* body{
     background: #000;
   } */
 /* navbar */
@@ -389,25 +390,26 @@
         padding: 0 1rem;
         gap: 1rem;
     }
-    
+
     .sticky-navbar-nav {
         display: none;
     }
-    
+
     .sticky-navbar-icons {
         border-left: none;
         padding-left: 0;
     }
-    
+
     .sticky-nav-link {
         margin: 0;
     }
 }
+
 /* Sticky Navbar by SHANTO */
 
 
 /* section1 by SHANTO */
-.section1{
+.section1 {
     width: 100%;
     height: 100vh;
     background: #fff;
@@ -416,10 +418,11 @@
     align-items: center;
     position: relative;
 }
+
 /* section1 by SHANTO */
 
 /* section1 by SHANTO */
-.section2{
+.section2 {
     width: 100%;
     background: #f8f8f8;
     padding: 60px 0;
@@ -447,11 +450,11 @@
     margin-bottom: 20px;
 }
 
-.imageClass{
-    background: linear-gradient(90deg,rgba(251, 127, 200, 1) 0%, rgba(239, 87, 122, 1) 100%);
+.imageClass {
+    background: linear-gradient(90deg, rgba(251, 127, 200, 1) 0%, rgba(239, 87, 122, 1) 100%);
     padding: 30px;
     border-top-left-radius: 16px;
-    border-bottom-right-radius: 16px        ;
+    border-bottom-right-radius: 16px;
 }
 
 .card-title {
@@ -468,10 +471,11 @@
     line-height: 1.6;
     margin: 0;
 }
+
 /* section1 by SHANTO */
 
 /* section1 by SHANTO */
-.section3{
+.section3 {
     width: 100%;
     height: 100vh;
     background: #d17d00;
@@ -479,10 +483,11 @@
     justify-content: center;
     align-items: center;
 }
+
 /* section1 by SHANTO */
 
 /* section1 by SHANTO */
-.section4{
+.section4 {
     width: 100%;
     height: 100vh;
     background: #ffc400;
@@ -490,10 +495,11 @@
     justify-content: center;
     align-items: center;
 }
+
 /* section1 by SHANTO */
 
 /* section1 by SHANTO */
-.section5{
+.section5 {
     width: 100%;
     height: 100vh;
     background: #c71818;
@@ -501,11 +507,12 @@
     justify-content: center;
     align-items: center;
 }
+
 /* section1 by SHANTO */
 
 
 
-.image-of-flower{
+.image-of-flower {
     width: 350px;
     height: 350px;
     position: absolute;
@@ -516,7 +523,7 @@
     animation: rotateFlower 10s linear infinite;
 }
 
-.image-of-flower .flower{
+.image-of-flower .flower {
     width: 100%;
     height: 100%;
     background-color: transparent !important;
@@ -526,6 +533,7 @@
     0% {
         transform: translate(-140%, 15%) rotate(0deg);
     }
+
     100% {
         transform: translate(-140%, 15%) rotate(360deg);
     }
@@ -537,9 +545,11 @@
         top: -100px;
         opacity: 1;
     }
+
     50% {
         opacity: 0.8;
     }
+
     100% {
         top: 100vh;
         opacity: 0.3;
@@ -547,15 +557,20 @@
 }
 
 @keyframes sway {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(0) rotate(0deg);
     }
+
     25% {
         transform: translateX(30px) rotate(5deg);
     }
+
     50% {
         transform: translateX(-30px) rotate(-5deg);
     }
+
     75% {
         transform: translateX(20px) rotate(3deg);
     }
@@ -582,25 +597,119 @@
     opacity: 0.8;
 }
 
-.falling-image-1 { animation: fall 8s linear infinite, sway 4s ease-in-out infinite; left: 5%; animation-delay: 0s; }
-.falling-image-2 { animation: fall 10s linear infinite, sway 5s ease-in-out infinite; left: 10%; animation-delay: 1s; }
-.falling-image-3 { animation: fall 9s linear infinite, sway 4.5s ease-in-out infinite; left: 15%; animation-delay: 0.5s; }
-.falling-image-4 { animation: fall 11s linear infinite, sway 5.5s ease-in-out infinite; left: 20%; animation-delay: 2s; }
-.falling-image-5 { animation: fall 9.5s linear infinite, sway 4s ease-in-out infinite; left: 25%; animation-delay: 1.5s; }
-.falling-image-6 { animation: fall 10.5s linear infinite, sway 5s ease-in-out infinite; left: 30%; animation-delay: 0.8s; }
-.falling-image-7 { animation: fall 8.5s linear infinite, sway 4.5s ease-in-out infinite; left: 35%; animation-delay: 1.2s; }
-.falling-image-8 { animation: fall 10s linear infinite, sway 5.5s ease-in-out infinite; left: 40%; animation-delay: 2.5s; }
-.falling-image-9 { animation: fall 9.5s linear infinite, sway 4s ease-in-out infinite; left: 45%; animation-delay: 1.8s; }
-.falling-image-10 { animation: fall 8.8s linear infinite, sway 4.8s ease-in-out infinite; left: 50%; animation-delay: 0.3s; }
-.falling-image-11 { animation: fall 10.2s linear infinite, sway 5.2s ease-in-out infinite; left: 55%; animation-delay: 2.2s; }
-.falling-image-12 { animation: fall 9.2s linear infinite, sway 4.2s ease-in-out infinite; left: 60%; animation-delay: 1.1s; }
-.falling-image-13 { animation: fall 10.8s linear infinite, sway 5.3s ease-in-out infinite; left: 65%; animation-delay: 0.6s; }
-.falling-image-14 { animation: fall 8.3s linear infinite, sway 4.3s ease-in-out infinite; left: 70%; animation-delay: 2.8s; }
-.falling-image-15 { animation: fall 9.8s linear infinite, sway 4.8s ease-in-out infinite; left: 75%; animation-delay: 1.4s; }
-.falling-image-16 { animation: fall 10.5s linear infinite, sway 5.1s ease-in-out infinite; left: 80%; animation-delay: 0.9s; }
-.falling-image-17 { animation: fall 9.3s linear infinite, sway 4.6s ease-in-out infinite; left: 85%; animation-delay: 1.9s; }
-.falling-image-18 { animation: fall 8.9s linear infinite, sway 4.9s ease-in-out infinite; left: 90%; animation-delay: 0.4s; }
-.falling-image-19 { animation: fall 10.6s linear infinite, sway 5.4s ease-in-out infinite; left: 95%; animation-delay: 2.3s; }
+.falling-image-1 {
+    animation: fall 8s linear infinite, sway 4s ease-in-out infinite;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.falling-image-2 {
+    animation: fall 10s linear infinite, sway 5s ease-in-out infinite;
+    left: 10%;
+    animation-delay: 1s;
+}
+
+.falling-image-3 {
+    animation: fall 9s linear infinite, sway 4.5s ease-in-out infinite;
+    left: 15%;
+    animation-delay: 0.5s;
+}
+
+.falling-image-4 {
+    animation: fall 11s linear infinite, sway 5.5s ease-in-out infinite;
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.falling-image-5 {
+    animation: fall 9.5s linear infinite, sway 4s ease-in-out infinite;
+    left: 25%;
+    animation-delay: 1.5s;
+}
+
+.falling-image-6 {
+    animation: fall 10.5s linear infinite, sway 5s ease-in-out infinite;
+    left: 30%;
+    animation-delay: 0.8s;
+}
+
+.falling-image-7 {
+    animation: fall 8.5s linear infinite, sway 4.5s ease-in-out infinite;
+    left: 35%;
+    animation-delay: 1.2s;
+}
+
+.falling-image-8 {
+    animation: fall 10s linear infinite, sway 5.5s ease-in-out infinite;
+    left: 40%;
+    animation-delay: 2.5s;
+}
+
+.falling-image-9 {
+    animation: fall 9.5s linear infinite, sway 4s ease-in-out infinite;
+    left: 45%;
+    animation-delay: 1.8s;
+}
+
+.falling-image-10 {
+    animation: fall 8.8s linear infinite, sway 4.8s ease-in-out infinite;
+    left: 50%;
+    animation-delay: 0.3s;
+}
+
+.falling-image-11 {
+    animation: fall 10.2s linear infinite, sway 5.2s ease-in-out infinite;
+    left: 55%;
+    animation-delay: 2.2s;
+}
+
+.falling-image-12 {
+    animation: fall 9.2s linear infinite, sway 4.2s ease-in-out infinite;
+    left: 60%;
+    animation-delay: 1.1s;
+}
+
+.falling-image-13 {
+    animation: fall 10.8s linear infinite, sway 5.3s ease-in-out infinite;
+    left: 65%;
+    animation-delay: 0.6s;
+}
+
+.falling-image-14 {
+    animation: fall 8.3s linear infinite, sway 4.3s ease-in-out infinite;
+    left: 70%;
+    animation-delay: 2.8s;
+}
+
+.falling-image-15 {
+    animation: fall 9.8s linear infinite, sway 4.8s ease-in-out infinite;
+    left: 75%;
+    animation-delay: 1.4s;
+}
+
+.falling-image-16 {
+    animation: fall 10.5s linear infinite, sway 5.1s ease-in-out infinite;
+    left: 80%;
+    animation-delay: 0.9s;
+}
+
+.falling-image-17 {
+    animation: fall 9.3s linear infinite, sway 4.6s ease-in-out infinite;
+    left: 85%;
+    animation-delay: 1.9s;
+}
+
+.falling-image-18 {
+    animation: fall 8.9s linear infinite, sway 4.9s ease-in-out infinite;
+    left: 90%;
+    animation-delay: 0.4s;
+}
+
+.falling-image-19 {
+    animation: fall 10.6s linear infinite, sway 5.4s ease-in-out infinite;
+    left: 95%;
+    animation-delay: 2.3s;
+}
 
 /* ===== RESPONSIVE SLIDER FOR TABLET AND MOBILE ===== */
 
@@ -609,35 +718,35 @@
     .section1 {
         height: 80vh;
     }
-    
+
     .navbarMy {
         margin-top: 0;
     }
-    
+
     .section1 .carousel-caption h5 {
         font-size: 1.5rem;
     }
-    
+
     .section1 .carousel-caption p {
         font-size: 0.9rem;
     }
-    
+
     .image-of-flower {
         width: 250px;
         height: 250px;
         transform: translate(-120%, 20%);
     }
-    
+
     .section1 .carousel-indicators button {
         width: 10px;
         height: 10px;
     }
-    
+
     .navbar-nav .nav-link {
         margin: 0 0.75rem;
         font-size: 0.85rem;
     }
-    
+
     .navbar-brand {
         margin-right: 1.5rem;
     }
@@ -648,22 +757,22 @@
     .section1 {
         height: 70vh;
     }
-    
+
     .section1 .carousel-caption {
         padding: 2rem 1rem;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     }
-    
+
     .section1 .carousel-caption h5 {
         font-size: 1.25rem;
         margin: 0 0 0.25rem 0;
     }
-    
+
     .section1 .carousel-caption p {
         font-size: 0.85rem;
         margin: 0;
     }
-    
+
     .image-of-flower {
         width: 180px;
         height: 180px;
@@ -672,41 +781,41 @@
         transform: translate(-50%, -50%);
         opacity: 0.7;
     }
-    
+
     .falling-image {
         width: 50px;
         height: 50px;
     }
-    
+
     .section1 .carousel-control-prev,
     .section1 .carousel-control-next {
         width: 40px;
         opacity: 0.7;
     }
-    
+
     .section1 .carousel-indicators {
         bottom: 15px;
     }
-    
+
     .section1 .carousel-indicators button {
         width: 8px;
         height: 8px;
         background-color: rgba(255, 255, 255, 0.6);
     }
-    
+
     .section1 .carousel-indicators button.active {
         background-color: #d4a5a5;
     }
-    
+
     .navbar-nav .nav-link {
         margin: 0.5rem 0;
         font-size: 0.9rem;
     }
-    
+
     .navbar-brand {
         margin-right: 1rem;
     }
-    
+
     .navbar-icons {
         margin-left: 0 !important;
         border-left: none !important;
@@ -722,56 +831,56 @@
     .section1 {
         height: 60vh;
     }
-    
+
     .section1 .carousel-caption {
         padding: 1.5rem 0.75rem;
     }
-    
+
     .section1 .carousel-caption h5 {
         font-size: 1rem;
         margin-bottom: 0.15rem;
     }
-    
+
     .section1 .carousel-caption p {
         font-size: 0.75rem;
     }
-    
+
     .image-of-flower {
         width: 130px;
         height: 130px;
         opacity: 0.6;
     }
-    
+
     .falling-image {
         width: 35px;
         height: 35px;
     }
-    
+
     .section1 .carousel-control-prev,
     .section1 .carousel-control-next {
         width: 30px;
         opacity: 0.6;
     }
-    
+
     .section1 .carousel-indicators {
         bottom: 10px;
     }
-    
+
     .section1 .carousel-indicators button {
         width: 7px;
         height: 7px;
         margin: 0 4px;
     }
-    
+
     .navbar {
         padding: 0.75rem 0;
         margin-top: 10px;
     }
-    
+
     .navbar-brand {
         margin-right: 0.5rem;
     }
-    
+
     .logo-placeholder {
         width: 40px;
         height: 40px;
@@ -806,6 +915,11 @@
     width: 100%;
     background: url("../Photos/breadcrumb_bg_image.jpg") center/cover no-repeat;
     height: 330px;
+}
+.offer {
+    width: 100%;
+    background: url("../Photos/parallax-spa.jpg") center/cover no-repeat;
+    height: 620px;
 }
 
 .testimonial-item {
@@ -925,7 +1039,7 @@
 }
 
 .post-img {
-    border-radius: 5px;
+    border-radius: 20px 0px 20px 0px !important;
     height: 250px;
     object-fit: cover;
     width: 100%;
@@ -986,16 +1100,122 @@
 
 /* : blog-details */
 
+.comment-section {
+    background: #f7f7f7;
+    border-radius: 15px;
+    padding: 45px;
+}
+
+/* Comment box with slanted leaf-like left border */
+.single-comment {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border: 1px solid #e9e9e9;
+}
+
+hr {
+    border: 1px solid #d8d8d8;
+}
+
+.oldBtn {
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    overflow: hidden;     
+}
+
+/* Both buttons */
+.oldBtn .btn {
+    border-radius: 0;
+    width: 15%;
+    padding: 12px 25px;
+    font-size: 16px;
+}
+
+.navBtnLeft {
+    border-right: 1px solid #e9e9e9 !important;
+    text-align: left;
+}
+
+.navBtnRight {
+    border-left: 1px solid #e9e9e9 !important;
+    text-align: right;
+}
+
+/* Hover effect: light pink */
+.oldBtn .btn:hover {
+    background-color: #ff6493;
+    transition: all linear .3s;
+}
+
+
+/* Number on left */
+.comment-number {
+    font-size: 22px;
+}
+
+/* Date + name row */
+.comment-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444;
+    font-size: 16px;
+}
+
+/* pink calendar + person icon */
+.comment-head i {
+    color: #ff6493;
+    margin-right: 5px;
+}
+
+
+/* Form styling */
 .pink-focus {
-    padding-top: 13px !important;
-    padding-bottom: 13px !important;
+    padding: 14px 20px !important;
+    border-radius: 50px !important;
 }
 
 .pink-focus:focus {
     border-color: #ff6493 !important;
     box-shadow: none !important;
-    outline: none !important;
 }
+
+.fancy-input {
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 20px 0px 20px 0px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.fancy-input:focus {
+    border-color: #ff2f78;
+    box-shadow: none !important;
+}
+
+textarea.pink-focus {
+    border-radius: 20px !important;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #ff6493;
+    border-radius: 20px 0px 20px 0px; 
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #e14878;
+        border-radius: 0px 20px 0px 20px; 
+
+}
+
+
 
 
 .blog-content img.post-img {
