@@ -1395,6 +1395,23 @@ textarea.pink-focus {
     margin-bottom: 15px;
     font-style: italic;
 }
+.aboutus-title {
+    font-family: "Indie Flower", cursive;
+  font-weight: 400;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fcfcfc;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.aboutTtext {
+    font-family: "Playfair", serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #fcd75d;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
 
 .about-title-underline {
     width: 60px;
