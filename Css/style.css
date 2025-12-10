@@ -614,6 +614,13 @@
 .spa-buy-btn:active {
     transform: translateY(0);
 }
+
+
+.MainRowDiv{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
 /* Day at the Spa Package Section End */
 
 

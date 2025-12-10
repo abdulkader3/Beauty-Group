@@ -225,4 +225,128 @@
         animation: waveAnimation 5s linear infinite !important;
         animation-delay: -2.5s !important;
     }
+
+    /* Spa Package Section - Mobile */
+    .spa-package-section {
+        padding: 40px 0;
+    }
+
+    .MainRowDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .spa-package-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .spa-header {
+        padding: 30px 20px 20px;
+    }
+
+    .spa-title {
+        font-size: 1.4rem;
+        margin: 0 0 10px 0;
+    }
+
+    .price-amount {
+        font-size: 1.8rem;
+    }
+
+    .price-label {
+        font-size: 0.85rem;
+    }
+
+    .spa-image-wrapper {
+        height: 220px;
+    }
+
+    .spa-services {
+        padding: 20px;
+    }
+
+    .service-item {
+        padding: 10px 0;
+        font-size: 0.95rem;
+    }
+
+    .spa-buy-btn {
+        width: calc(100% - 40px);
+        margin: 0 20px 20px 20px;
+        padding: 14px;
+        font-size: 1rem;
+    }
+}
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+    /* Spa Package Section - Tablet */
+    .spa-package-section {
+        padding: 60px 0;
+    }
+
+    .MainRowDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .spa-package-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .spa-header {
+        padding: 35px 25px 25px;
+    }
+
+    .spa-title {
+        font-size: 1.6rem;
+        margin: 0 0 12px 0;
+    }
+
+    .price-amount {
+        font-size: 2rem;
+    }
+
+    .price-label {
+        font-size: 0.9rem;
+    }
+
+    .spa-image-wrapper {
+        height: 250px;
+    }
+
+    .spa-services {
+        padding: 25px;
+    }
+
+    .service-item {
+        padding: 11px 0;
+        font-size: 0.98rem;
+    }
+
+    .spa-buy-btn {
+        width: calc(100% - 50px);
+        margin: 0 25px 25px 25px;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+/* Desktop (min-width: 993px) */
+@media (min-width: 993px) {
+    .MainRowDiv {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: nowrap;
+    }
+
+    .spa-package-card {
+        max-width: 380px;
+        flex: 0 1 380px;
+    }
 }
