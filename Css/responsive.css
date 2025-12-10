@@ -31,6 +31,10 @@
 /* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
 
+   .row.g-4 {
+        gap: 20px;
+    }
+
   .testimonials {
     height: auto;
     padding: 50px 0 110px;
@@ -71,6 +75,12 @@
 
 /* Small Mobiles (max-width: 576px) */
 @media (max-width: 576px) {
+   .page-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        border-radius: 12px 0px 12px 0px;
+    }
 
   .testimonial-item {
     margin: 20px auto;
@@ -133,6 +143,15 @@
 
 /* Mobile Devices (max-width: 768px) */
 @media (max-width: 768px) {
+  .blog-card {
+        height: auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .blogg-img {
+        height: 200px;
+    }
 
     .section-title {
         font-size: 26px;
@@ -214,5 +233,31 @@
         width: 32px;
         height: 32px;
         font-size: 14px;
+    }
+}
+@media (max-width: 480px) {
+
+    .blog-meta {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .blog-title {
+        font-size: 18px;
+    }
+
+    .blog-desc {
+        font-size: 15px;
+        letter-spacing: 0;
+        margin: 10px 0;
+    }
+
+    .read-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .blogg-img {
+        height: 170px;
     }
 }
