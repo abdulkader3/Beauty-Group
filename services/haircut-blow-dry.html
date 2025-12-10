@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haircut & Blow Dry - Beauty Group</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+    <style>
+        .service-hero {
+            background: linear-gradient(135deg, #ff5e7e 0%, #ff9a8b 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .service-hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .service-hero p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        .service-content {
+            padding: 60px 0;
+        }
+        .service-section {
+            margin-bottom: 50px;
+        }
+        .service-section h2 {
+            color: #ff5e7e;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .service-section h2:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #ff5e7e;
+        }
+        .benefit-item {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #ff5e7e;
+        }
+        .benefit-item i {
+            color: #ff5e7e;
+            font-size: 1.5rem;
+            margin-right: 20px;
+            min-width: 30px;
+        }
+        .benefit-item p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .back-btn {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #ff5e7e;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .back-btn:hover {
+            color: #ff9a8b;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="sticky-navbar">
+        <div class="sticky-nav-content">
+            <a class="sticky-navbar-brand" href="/">
+                <span class="sticky-logo-placeholder">
+                    <img src="/Photos/Logo.webp" alt="Beauty Group Logo" width="100">
+                </span>
+            </a>
+            <ul class="sticky-navbar-nav">
+                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/">Home</a></li>
+                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/">Collection</a></li>
+                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/">Services</a></li>
+            </ul>
+            <div class="sticky-navbar-icons">
+                <span class="LANGUAGE">ENG</span>
+                <span class="LANGUAGE">BNG</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Service Hero Section -->
+    <div class="service-hero">
+        <div class="container">
+            <h1>Haircut & Blow Dry</h1>
+            <p>Professional styling for a polished, beautiful look</p>
+        </div>
+    </div>
+
+    <!-- Service Content -->
+    <div class="service-content">
+        <div class="container">
+            <a href="../index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Packages
+            </a>
+
+            <!-- Description Section -->
+            <div class="service-section">
+                <h2>What is Haircut & Blow Dry?</h2>
+                <p>Our professional Haircut & Blow Dry service combines expert precision cutting with professional styling. Our stylists analyze your face shape, hair texture, and personal style to create a flattering cut, followed by a professional blow-dry that enhances your hair's natural beauty and creates a polished, salon-fresh look.</p>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="service-section">
+                <h2>Key Benefits</h2>
+                <div class="benefit-item">
+                    <i class="fas fa-scissors"></i>
+                    <p><strong>Expert Precision:</strong> Professional cut tailored to your features</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-sparkles"></i>
+                    <p><strong>Polished Appearance:</strong> Professional styling for any occasion</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-leaf"></i>
+                    <p><strong>Hair Health:</strong> Removes damaged ends and promotes growth</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-star"></i>
+                    <p><strong>Volume & Shine:</strong> Professional blow-dry techniques create beautiful results</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-heart"></i>
+                    <p><strong>Confidence Boost:</strong> Look and feel your best</p>
+                </div>
+            </div>
+
+            <!-- Treatment Details -->
+            <div class="service-section">
+                <h2>Treatment Details</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><strong>Duration:</strong> 45-60 minutes</li>
+                    <li class="list-group-item"><strong>Frequency:</strong> Every 4-6 weeks for haircut maintenance</li>
+                    <li class="list-group-item"><strong>Suitable for:</strong> All hair types and lengths</li>
+                    <li class="list-group-item"><strong>Results:</strong> Fresh, flattering cut with beautiful styling</li>
+                </ul>
+            </div>
+
+            <!-- What's Included -->
+            <div class="service-section">
+                <h2>What's Included</h2>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Consultation on style preferences and hair goals</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Face shape and hair texture analysis</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Professional precision cutting</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Shampoo and conditioning</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Professional blow-dry with styling</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Personalized styling tips and product recommendations</p>
+                </div>
+            </div>
+
+            <!-- Style Options -->
+            <div class="service-section">
+                <h2>Our Stylists Specialize In</h2>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Long layers for movement and dimension</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Bob cuts for a modern, chic look</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Short crops for a bold statement</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Textured cuts for maximum volume</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-check"></i>
+                    <p>Blunt cuts for a sleek, sophisticated style</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-section" style="margin-top: 80px;">
+        <div class="wave-container">
+            <svg class="wave" viewBox="0 0 1200 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ff5e7e;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <path class="wave-path" d="M0,35 Q75,5 150,35 T300,35 T450,35 T600,35 T750,35 T900,35 T1050,35 T1200,35 L1200,110 L0,110 Z" fill="url(#waveGradient)"></path>
+                <path class="wave-path wave-path-2" d="M0,50 Q75,15 150,50 T300,50 T450,50 T600,50 T750,50 T900,50 T1050,50 T1200,50 L1200,110 L0,110 Z" fill="#ff5e7e" opacity="0.6"></path>
+                <path class="wave-path wave-path-2" d="M0,65 Q75,30 150,65 T300,65 T450,65 T600,65 T750,65 T900,65 T1050,65 T1200,65 L1200,110 L0,110 Z" fill="#ff5e7e" opacity="0.3"></path>
+            </svg>
+        </div>
+        <div class="footer-container">
+            <div class="footer-social-icons">
+                <a href="#" class="social-icon facebook-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon pinterest-icon"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="social-icon instagram-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <nav class="footer-nav">
+                <a href="#" class="footer-link">Search</a>
+                <a href="#" class="footer-link">Help</a>
+                <a href="#" class="footer-link">Information</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+                <a href="#" class="footer-link">Shipping Details</a>
+            </nav>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Beauty Group - All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
