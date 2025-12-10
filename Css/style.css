@@ -274,7 +274,7 @@
     padding: 0 2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 2rem;
 }
 
@@ -284,6 +284,7 @@
     color: #d4a5a5 !important;
     white-space: nowrap;
     text-decoration: none;
+    margin-right: auto;
 }
 
 .sticky-logo-placeholder {
@@ -301,7 +302,6 @@
     gap: 0;
     margin: 0;
     padding: 0;
-    flex: 1;
     justify-content: center;
 }
 
@@ -381,26 +381,165 @@
     border-left: 1px solid #ddd;
     padding-left: 2rem;
     white-space: nowrap;
+    margin-left: auto;
+}
+
+.sticky-navbar-toggler {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-left: auto;
+    z-index: 1000;
+}
+
+.sticky-navbar-toggler-icon {
+    display: block;
+    width: 24px;
+    height: 20px;
+    position: relative;
+}
+
+.sticky-navbar-toggler-icon::before,
+.sticky-navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.sticky-navbar-toggler-icon::before {
+    top: 0;
+}
+
+.sticky-navbar-toggler-icon::after {
+    bottom: 0;
+}
+
+.sticky-navbar-toggler-icon {
+    box-shadow: 0 9px 0 #333;
+}
+
+.sticky-navbar-toggler.active .sticky-navbar-toggler-icon {
+    box-shadow: none;
+}
+
+.sticky-navbar-toggler.active .sticky-navbar-toggler-icon::before {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.sticky-navbar-toggler.active .sticky-navbar-toggler-icon::after {
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 /* Responsive Sticky Navbar */
 @media (max-width: 991px) {
     .sticky-nav-content {
         padding: 0 1rem;
-        gap: 1rem;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+    
+    .sticky-navbar-brand {
+        order: 1;
+    }
+    
+    .sticky-navbar-toggler {
+        display: block;
+        order: 3;
+        margin-left: auto;
     }
     
     .sticky-navbar-nav {
-        display: none;
+        order: 4;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 1rem;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .sticky-navbar-nav.show {
+        max-height: 400px;
+    }
+    
+    .sticky-nav-item {
+        width: 100%;
+    }
+    
+    .sticky-nav-link {
+        padding: 0.75rem 1rem;
+        margin: 0;
+        display: block;
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    .sticky-dropdown-menu {
+        position: static;
+        box-shadow: none;
+        background: #fafafa;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .sticky-nav-item.dropdown.active .sticky-dropdown-menu {
+        max-height: 200px;
+    }
+    
+    .sticky-nav-item.dropdown:hover .sticky-dropdown-menu {
+        max-height: 200px;
+    }
+    
+    .sticky-dropdown-item {
+        padding: 0.5rem 2rem;
     }
     
     .sticky-navbar-icons {
+        order: 2;
         border-left: none;
         padding-left: 0;
+        margin-left: 0.5rem;
+    }
+
+    .icon{
+        font-size: 30px;
     }
     
     .sticky-nav-link {
         margin: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .sticky-navbar {
+        padding: 0.75rem 0;
+    }
+    
+    .sticky-nav-content {
+        padding: 0 0.75rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .sticky-navbar-brand img {
+        width: 70px !important;
+    }
+    
+    .sticky-navbar-icons {
+        gap: 1rem;
+    }
+    
+    .LANGUAGE {
+        font-size: 0.85rem;
     }
 }
 /* Sticky Navbar by SHANTO */

@@ -37,7 +37,60 @@ window.addEventListener('scroll', function() {
             stickyNavbar.classList.remove('active');
         }
     }
-})
+});
+
+// Sticky Navbar Mobile Toggle by SHANTO
+document.addEventListener('DOMContentLoaded', function() {
+    const stickyToggler = document.getElementById('stickyNavbarToggler');
+    const stickyMenu = document.getElementById('stickyNavbarMenu');
+    const stickyDropdowns = document.querySelectorAll('.sticky-nav-item.dropdown');
+    
+    // Toggle mobile menu
+    if (stickyToggler) {
+        stickyToggler.addEventListener('click', function() {
+            stickyToggler.classList.toggle('active');
+            stickyMenu.classList.toggle('show');
+        });
+    }
+    
+    // Close menu when clicking on a link
+    const stickyLinks = document.querySelectorAll('.sticky-nav-link');
+    stickyLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Don't close if it's a dropdown toggle
+            if (!this.closest('.dropdown')) {
+                stickyToggler.classList.remove('active');
+                stickyMenu.classList.remove('show');
+            }
+        });
+    });
+    
+    // Handle dropdown menus on mobile
+    stickyDropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.sticky-nav-link');
+        
+        toggle.addEventListener('click', function(e) {
+            const isActive = dropdown.classList.contains('active');
+            // Close all other dropdowns
+            stickyDropdowns.forEach(d => d.classList.remove('active'));
+            // Toggle current dropdown
+            if (!isActive) {
+                e.preventDefault();
+                dropdown.classList.add('active');
+            }
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', function(event) {
+        const stickyNav = document.querySelector('.sticky-navbar');
+        if (stickyNav && !stickyNav.contains(event.target)) {
+            stickyToggler.classList.remove('active');
+            stickyMenu.classList.remove('show');
+            stickyDropdowns.forEach(d => d.classList.remove('active'));
+        }
+    });
+});
 
 const backToTop = document.getElementById("backToTop");
 
