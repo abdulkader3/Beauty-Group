@@ -1041,9 +1041,15 @@
     text-align: center;
     overflow: hidden;
 }
-
+.tags{
+    color: #2c1010;
+}
+.tags p:hover{
+    color: #ff6493;
+    cursor: pointer;
+}
 .post-img {
-    border-radius: 20px 0px 20px 0px !important;
+    border-radius: 50px 0px 50px 0px !important;
     height: 250px;
     object-fit: cover;
     width: 100%;
@@ -1262,7 +1268,7 @@
 
 /* Arrow button shape (same as screenshot) */
 .page-btn.arrow {
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0px 15px 0px;
 }
 
 /* Active Page */
@@ -1420,6 +1426,90 @@ textarea.pink-focus {
     height: 500px;
     margin-bottom: 1.5rem;
     border-radius: 10px;
+}
+/* ====== Responsive for Blog Details ====== */
+@media (max-width: 991px) {
+    .blog-content img.post-img {
+        height: auto;
+    }
+
+    .oldBtn .btn {
+        width: 48%;  /* 2 buttons side by side on tablets */
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .comment-section {
+        padding: 30px;
+    }
+
+    .single-comment {
+        padding: 20px;
+    }
+
+    .comment-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        font-size: 14px;
+    }
+
+    .comment-number {
+        font-size: 18px;
+    }
+
+    .fancy-input, .pink-focus {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 575px) {
+    .oldBtn {
+        flex-direction: column;
+    }
+
+    .oldBtn .btn {
+        width: 100%;
+        text-align: center !important;
+        margin-bottom: 10px;
+    }
+
+    .comment-head {
+        font-size: 13px;
+    }
+
+    .comment-number {
+        font-size: 16px;
+    }
+
+    .comment-section {
+        padding: 20px;
+    }
+
+    .single-comment {
+        padding: 15px;
+    }
+
+    .fancy-input, .pink-focus {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+    .submit-btn {
+        padding: 6px 15px;
+        font-size: 13px;
+    }
+
+    .blog-content img.post-img {
+        height: auto;
+        margin-bottom: 1rem;
+    }
 }
 
 
