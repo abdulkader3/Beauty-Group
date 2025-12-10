@@ -1191,6 +1191,118 @@
     transform: scale(1);
 }
 
+/* Container services */
+.info-contact-section h3 {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-family: 'SolaimanLipi', Arial, sans-serif;
+}
+
+/* Contact Banner */
+.contact-banner {
+  background-color: #e60000; /* গাঢ় লাল */
+  color: white;
+  padding: 20px 30px;
+  font-weight: 600;
+  font-size: 18px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.banner-text {
+  flex: 1;
+  font-family: 'SolaimanLipi', Arial, sans-serif;
+  min-width: 250px;
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.contact-btn:hover {
+  background-color: white;
+  color: #e60000;
+}
+
+.scroll-top {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-left: 20px;
+  user-select: none;
+  transition: color 0.3s ease;
+  white-space: nowrap;
+}
+
+.scroll-top:hover {
+  color: #ffcccc;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  /* medium devices (tablets) */
+  .info-contact-section .row {
+    flex-direction: column;
+  }
+  .info-contact-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-banner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .banner-text, .contact-btn, .scroll-top {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+  
+  .contact-btn {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* small devices (phones) */
+  .info-contact-section h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .contact-banner {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  
+  .contact-btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  
+  .scroll-top {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+}
+
+
 
 .icon{
     color: #ff6493;
