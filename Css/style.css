@@ -421,7 +421,6 @@
 /* section1 by SHANTO */
 .section2{
     width: 100%;
-    background: #f8f8f8;
     padding: 60px 0;
 }
 
@@ -502,6 +501,120 @@
     align-items: center;
 }
 /* section1 by SHANTO */
+
+/* Day at the Spa Package Section */
+.spa-package-section {
+    width: 100%;
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.spa-package-card {
+    max-width: 380px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.spa-header {
+    padding: 40px 30px 30px;
+    text-align: center;
+    background: #fafafa;
+}
+
+.spa-title {
+    font-size: 1.8rem;
+    color: #8b5a6a;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    font-style: italic;
+}
+
+.spa-price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.price-amount {
+    font-size: 2.2rem;
+    color: #e85b8a;
+    font-weight: 700;
+}
+
+.price-label {
+    font-size: 0.95rem;
+    color: #d4a5a5;
+    font-weight: 500;
+}
+
+.spa-image-wrapper {
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(135deg, #e8d4d4 0%, #f5e8e8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 1rem;
+    overflow: hidden;
+}
+
+.spa-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spa-services {
+    padding: 30px;
+}
+
+.service-item {
+    padding: 12px 0;
+    text-align: center;
+    color: #8b5a6a;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid #f0f0f0;
+    transition: color 0.3s ease;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item:hover {
+    color: #e85b8a;
+}
+
+.spa-buy-btn {
+    width: calc(100% - 60px);
+    margin: 0 30px 30px 30px;
+    padding: 16px;
+    background: linear-gradient(90deg, #e85b8a 0%, #d63f73 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(232, 91, 138, 0.3);
+}
+
+.spa-buy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(232, 91, 138, 0.4);
+}
+
+.spa-buy-btn:active {
+    transform: translateY(0);
+}
+/* Day at the Spa Package Section End */
 
 
 
@@ -1026,7 +1139,6 @@
 /* ========================= ABOUT US SECTION ========================= */
 
 .about-us-section {
-    background-color: #f9f3f0;
     padding: 80px 0;
 }
 
