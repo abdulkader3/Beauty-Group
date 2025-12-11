@@ -1,0 +1,98 @@
+/* MAP WRAPPER */
+.map-wrapper iframe {
+  border-radius: 12px;
+  width: 100%;
+}
+
+/* -----contact css------ */
+.head-banner{
+  background-color: #e187e9;
+  background-image: url('/Photos/hederBanner');
+  background-size: cover;
+  background-position: center;
+  height: 230px;
+}
+.head-text {
+  font-size: 14px;
+  color: rgba(102, 102, 91, 0.781);
+}
+.contact-home{
+  color: #d929e9;
+}
+/* Info Box */
+.info-box {
+  border: 2px solid #eaeaea;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.info-box:hover {
+  border-color: #ff4f95;
+}
+
+/* Icon circle */
+.info-box .icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #ff4f95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+.info-box:hover .icon{
+  background-color: #e187e9;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: "Georgia", serif;
+}
+.info-box p{
+  font-weight: 400;
+  font-size: 14px;
+  color: #908282;
+}
+
+/* Input fields */
+.contact-input {
+  border-radius: 10px;
+  padding: 12px 15px;
+  border: 1px solid #cec8c8;
+  transition: 0.3s;
+}
+
+.contact-input:focus,
+.contact-input:hover {
+  border-color: #ff4f95;
+  box-shadow: none;
+}
+
+/* Send button */
+.send-btn {
+  background: linear-gradient(90deg, #ff6aa7, #ff4f95);
+  color: white;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 12px 0px 12px 0px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  border-radius: 0px 12px 0px 12px;
+  
+}
+.contact-text{
+   font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  /* color: ; */
+  
+}
