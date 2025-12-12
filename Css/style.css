@@ -1,5 +1,12 @@
-/* ================= Font Import ================= */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* ===== Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+
+/* Body text, paragraphs, meta info, comments, inputs */
+body{
+        font-family: 'Quicksand', sans-serif;
+}
 
 
 * {
@@ -11,9 +18,7 @@
     list-style: none;
     scroll-behavior: smooth;
 }
-body {
-    font-family: 'Quicksand', sans-serif;
-}
+
 
 
 /* Navbar Styling */
