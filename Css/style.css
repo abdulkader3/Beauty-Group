@@ -1,3 +1,7 @@
+/* ================= Font Import ================= */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +9,10 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -1163,6 +1169,110 @@
 /* ===== END RESPONSIVE SLIDER ===== */
 
 
+/* ===============================
+   GLOBAL RESPONSIVE IMAGE FIX
+================================*/
+.blogg-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* ===============================
+   TEXT RESPONSIVENESS
+================================*/
+.fw-bold.text-uppercase {
+    font-size: 22px;
+}
+
+.recent-title {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.recent-title a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ===============================
+   GRID & CARD SPACING
+================================*/
+.row.g-4 > div {
+    margin-bottom: 25px;
+}
+
+/* ===============================
+   RESPONSIVE BREAKPOINTS
+================================*/
+
+/* Large Tablets (max 992px) */
+@media (max-width: 992px) {
+    .fw-bold.text-uppercase {
+        font-size: 20px;
+    }
+    .fw-bold[style*="#ff6493"] {
+        font-size: 16px;
+    }
+}
+
+/* Tablets (max 768px) */
+@media (max-width: 768px) {
+    .fw-bold.text-uppercase {
+        font-size: 18px;
+    }
+
+    .fw-bold[style*="#ff6493"] {
+        font-size: 15px;
+    }
+
+    .recent-title {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    span.d-flex {
+        justify-content: center !important;
+        gap: 20px;
+    }
+}
+
+/* Mobile (max 576px) */
+@media (max-width: 576px) {
+
+    /* top section */
+    .makeover {
+        padding: 40px 0 !important;
+    }
+
+    .makeover h2 {
+        font-size: 26px !important;
+    }
+
+    .makeover a {
+        font-size: 16px !important;
+    }
+
+    /* card title + subtitle */
+    .fw-bold.text-uppercase,
+    .fw-bold[style*="#ff6493"] {
+        text-align: center;
+    }
+
+    /* card info alignment */
+    span.d-flex {
+        justify-content: center !important;
+        gap: 20px;
+    }
+
+    /* pagination size */
+    .custom-pagination .page-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
 
 
 
@@ -1184,6 +1294,41 @@
     width: 100%;
     background: url("../Photos/parallax-spa.jpg") center/cover no-repeat;
     height: 620px;
+}
+.hair {
+    width: 100%;
+    background: url("../Photos/hair-cut-big-perfectparlour-2.jpg") center/cover no-repeat;
+    height: 330px;
+}
+.makeover {
+    width: 100%;
+    background: url("../Photos/Party-or-event-makeup-perfectparlour.jpg") center/cover no-repeat;
+    height: 330px;
+}
+.face {
+    width: 100%;
+    background: url("../Photos/facial-big-perfectparlour-1.jpg") center/cover no-repeat;
+    height: 330px;
+}
+.saree {
+    width: 100%;
+    background: url("../Photos/makeover-slider-big-perfectparlour-1.jpg") center/cover no-repeat;
+    height: 330px;
+}
+.mehedi {
+    width: 100%;
+    background: url("../Photos/meheedi.jpg") center/cover no-repeat;
+    height: 330px;
+}
+.massage {
+    width: 100%;
+    background: url("../Photos/Massage-big-perfectparlour-2.jpg") center/cover no-repeat;
+    height: 330px;
+}
+.skin {
+    width: 100%;
+    background: url("../Photos/hair-cut-big-perfectparlour-2.jpg") center/cover no-repeat;
+    height: 330px;
 }
 
 .testimonial-item {
@@ -2030,6 +2175,7 @@ textarea.pink-focus {
 .footer-section {
     background: linear-gradient(135deg, #ff5e7e 0%, #ff5e7e 100%);
     padding: 80px 20px 80px 20px;
+    margin-top: 60px;
     text-align: center;
     position: relative;
     overflow: visible;
