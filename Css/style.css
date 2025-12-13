@@ -2,13 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 
-
-/* Body text, paragraphs, meta info, comments, inputs */
-body{
-        font-family: 'Quicksand', sans-serif;
-}
-
-
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +12,9 @@ body{
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Quicksand', sans-serif;
+}
 
 
 /* Navbar Styling */
@@ -269,10 +265,6 @@ body{
     transform: translateY(0);
 }
 
-/* body{
-    background: #000;
-  } */
-/* navbar */
 
 /* Sticky Navbar by SHANTO */
 .sticky-navbar {
@@ -466,11 +458,11 @@ body{
         gap: 0;
         flex-wrap: wrap;
     }
-    
+
     .sticky-navbar-brand {
         order: 1;
     }
-    
+
     .sticky-navbar-toggler {
         display: block;
         order: 3;
@@ -487,22 +479,22 @@ body{
         overflow: hidden;
         transition: max-height 0.3s ease;
     }
-    
+
     .sticky-navbar-nav.show {
         max-height: 400px;
     }
-    
+
     .sticky-nav-item {
         width: 100%;
     }
-    
+
     .sticky-nav-link {
         padding: 0.75rem 1rem;
         margin: 0;
         display: block;
         border-bottom: 1px solid #f0f0f0;
     }
-    
+
     .sticky-dropdown-menu {
         position: static;
         box-shadow: none;
@@ -514,15 +506,15 @@ body{
         overflow: hidden;
         transition: max-height 0.3s ease;
     }
-    
+
     .sticky-nav-item.dropdown.active .sticky-dropdown-menu {
         max-height: 200px;
     }
-    
+
     .sticky-nav-item.dropdown:hover .sticky-dropdown-menu {
         max-height: 200px;
     }
-    
+
     .sticky-dropdown-item {
         padding: 0.5rem 2rem;
     }
@@ -534,7 +526,7 @@ body{
         margin-left: 0.5rem;
     }
 
-    .icon{
+    .icon {
         font-size: 30px;
     }
 
@@ -547,25 +539,26 @@ body{
     .sticky-navbar {
         padding: 0.75rem 0;
     }
-    
+
     .sticky-nav-content {
         padding: 0 0.75rem;
         display: flex;
         justify-content: space-between;
     }
-    
+
     .sticky-navbar-brand img {
         width: 70px !important;
     }
-    
+
     .sticky-navbar-icons {
         gap: 1rem;
     }
-    
+
     .LANGUAGE {
         font-size: 0.85rem;
     }
 }
+
 /* Sticky Navbar by SHANTO */
 
 
@@ -787,11 +780,12 @@ body{
 }
 
 
-.MainRowDiv{
+.MainRowDiv {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
+
 /* Day at the Spa Package Section End */
 
 
@@ -1205,7 +1199,7 @@ body{
 /* ===============================
    GRID & CARD SPACING
 ================================*/
-.row.g-4 > div {
+.row.g-4>div {
     margin-bottom: 25px;
 }
 
@@ -1218,6 +1212,7 @@ body{
     .fw-bold.text-uppercase {
         font-size: 20px;
     }
+
     .fw-bold[style*="#ff6493"] {
         font-size: 16px;
     }
@@ -1287,7 +1282,7 @@ body{
 .testimonials {
     width: 100%;
     background: url("../Photos/testimonial.webp") center/cover no-repeat;
-    height: 600px;
+    height: 500px;
 }
 
 .top-header {
@@ -1295,41 +1290,49 @@ body{
     background: url("../Photos/breadcrumb_bg_image.jpg") center/cover no-repeat;
     height: 330px;
 }
+
 .offer {
     width: 100%;
     background: url("../Photos/parallax-spa.jpg") center/cover no-repeat;
     height: 620px;
 }
+
 .hair {
     width: 100%;
     background: url("../Photos/hair-cut-big-perfectparlour-2.jpg") center/cover no-repeat;
     height: 330px;
 }
+
 .makeover {
     width: 100%;
     background: url("../Photos/Party-or-event-makeup-perfectparlour.jpg") center/cover no-repeat;
     height: 330px;
 }
+
 .face {
     width: 100%;
     background: url("../Photos/facial-big-perfectparlour-1.jpg") center/cover no-repeat;
     height: 330px;
 }
+
 .saree {
     width: 100%;
     background: url("../Photos/makeover-slider-big-perfectparlour-1.jpg") center/cover no-repeat;
     height: 330px;
 }
+
 .mehedi {
     width: 100%;
     background: url("../Photos/meheedi.jpg") center/cover no-repeat;
     height: 330px;
 }
+
 .massage {
     width: 100%;
     background: url("../Photos/Massage-big-perfectparlour-2.jpg") center/cover no-repeat;
     height: 330px;
 }
+
 .skin {
     width: 100%;
     background: url("../Photos/hair-cut-big-perfectparlour-2.jpg") center/cover no-repeat;
@@ -1339,8 +1342,9 @@ body{
 .testimonial-item {
     text-align: center;
     max-width: 800px;
-    margin: 90px auto 30px;
+    margin: 20px auto;
     color: #000;
+    height: 350px;
 }
 
 .testimonial-photo {
@@ -1384,7 +1388,7 @@ body{
 
 /* Move indicators to bottom */
 .testimonials .carousel-indicators {
-    bottom: -70px !important;
+    bottom: -100px !important;
 }
 
 .testimonials .carousel-indicators button {
@@ -1404,6 +1408,7 @@ body{
     color: #f26290;
 
 }
+
 
 /* ========================= RECENT POSTS ========================= */
 
@@ -1449,16 +1454,59 @@ body{
 
 .post-card {
     padding: 10px 15px;
+    width: 100%;
     text-align: center;
     overflow: hidden;
+    height: auto;              
+    min-height: 420px;        
 }
-.tags{
+.post-img {
+    height: 220px;
+    object-fit: cover;
+}
+
+@media (max-width: 767px) {
+    .post-img {
+        height: 180px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .post-card {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .post-card {
+        min-height: 460px;
+    }
+}
+
+@media (max-width: 991px) {
+    .post-card {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 767px) {
+    .post-card {
+        min-height: auto;   
+        padding: 15px;
+    }
+}
+
+
+.tags {
     color: #2c1010;
 }
-.tags p:hover{
+
+.tags p:hover {
     color: #ff6493;
     cursor: pointer;
 }
+
 .post-img {
     border-radius: 50px 0px 50px 0px !important;
     height: 250px;
@@ -1491,6 +1539,7 @@ body{
     color: #f26290;
     font-size: 14px;
 }
+
 
 /* Slider arrows */
 .post-slider-controls {
@@ -1545,11 +1594,13 @@ body{
     font-weight: 600;
     color: #242020;
 }
-.recent-heading:hover{
+
+.recent-heading:hover {
     color: #ff6493;
     cursor: pointer;
     transition: all linear .3s;
 }
+
 .recent-text {
     font-size: 16px;
     color: #555;
@@ -1564,6 +1615,7 @@ body{
     height: 350px;
     border-radius: 0px 20px 0px 20px;
 }
+
 /* Same width fix */
 .blogg-card {
     padding: 0;
@@ -1604,120 +1656,126 @@ body{
 
 /* Container services */
 .info-contact-section h3 {
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 12px;
-  font-family: 'SolaimanLipi', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 12px;
+    font-family: 'SolaimanLipi', Arial, sans-serif;
 }
 
 /* Contact Banner */
 .contact-banner {
-  background-color: #e60000; /* গাঢ় লাল */
-  color: white;
-  padding: 20px 30px;
-  font-weight: 600;
-  font-size: 18px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+    background-color: #e60000;
+    color: white;
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .banner-text {
-  flex: 1;
-  font-family: 'SolaimanLipi', Arial, sans-serif;
-  min-width: 250px;
+    flex: 1;
+    font-family: 'SolaimanLipi', Arial, sans-serif;
+    min-width: 250px;
 }
 
 .contact-btn {
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 10px 25px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 2px;
-  transition: background-color 0.3s ease;
-  margin-left: 20px;
-  white-space: nowrap;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    margin-left: 20px;
+    white-space: nowrap;
 }
 
 .contact-btn:hover {
-  background-color: white;
-  color: #e60000;
+    background-color: white;
+    color: #e60000;
 }
 
 .scroll-top {
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  margin-left: 20px;
-  user-select: none;
-  transition: color 0.3s ease;
-  white-space: nowrap;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+    user-select: none;
+    transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .scroll-top:hover {
-  color: #ffcccc;
+    color: #ffcccc;
 }
 
 /* Responsive styles */
 @media (max-width: 991px) {
-  /* medium devices (tablets) */
-  .info-contact-section .row {
-    flex-direction: column;
-  }
-  .info-contact-section h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-banner {
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-    gap: 15px;
-  }
-  
-  .banner-text, .contact-btn, .scroll-top {
-    flex-basis: 100%;
-    margin-left: 0;
-  }
-  
-  .contact-btn {
-    margin-top: 10px;
-  }
+
+    /* medium devices (tablets) */
+    .info-contact-section .row {
+        flex-direction: column;
+    }
+
+    .info-contact-section h3 {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact-banner {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .banner-text,
+    .contact-btn,
+    .scroll-top {
+        flex-basis: 100%;
+        margin-left: 0;
+    }
+
+    .contact-btn {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 576px) {
-  /* small devices (phones) */
-  .info-contact-section h3 {
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-  
-  .contact-banner {
-    font-size: 16px;
-    padding: 15px 20px;
-  }
-  
-  .contact-btn {
-    padding: 8px 20px;
-    font-size: 14px;
-  }
-  
-  .scroll-top {
-    font-size: 24px;
-    margin-left: 10px;
-  }
+
+    /* small devices (phones) */
+    .info-contact-section h3 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .contact-banner {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .contact-btn {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .scroll-top {
+        font-size: 24px;
+        margin-left: 10px;
+    }
 }
 
 
 
-.icon{
+.icon {
     color: #ff6493;
 }
+
 /* Blog meta style */
 .blog-meta {
     font-size: 18px;
@@ -1736,7 +1794,7 @@ body{
     font-weight: 600;
     font-style: italic;
     transition: 0.3s;
-        cursor: pointer;
+    cursor: pointer;
 
 }
 
@@ -1761,6 +1819,7 @@ body{
     object-fit: cover;
     width: 100%;
 }
+
 /* Pagination Wrapper */
 .custom-pagination {
     display: flex;
@@ -1845,7 +1904,7 @@ hr {
 .oldBtn {
     border: 1px solid #e9e9e9;
     border-radius: 10px;
-    overflow: hidden;     
+    overflow: hidden;
 }
 
 /* Both buttons */
@@ -1925,7 +1984,7 @@ textarea.pink-focus {
 /* Submit Button */
 .submit-btn {
     background: #ff6493;
-    border-radius: 20px 0px 20px 0px; 
+    border-radius: 20px 0px 20px 0px;
     padding: 10px 30px;
     color: white;
     border: none;
@@ -1936,10 +1995,11 @@ textarea.pink-focus {
 
 .submit-btn:hover {
     background: #e14878;
-        border-radius: 0px 20px 0px 20px; 
+    border-radius: 0px 20px 0px 20px;
 
 }
-.read-btn{
+
+.read-btn {
     padding: 14px 30px;
 }
 
@@ -1950,6 +2010,7 @@ textarea.pink-focus {
     margin-bottom: 1.5rem;
     border-radius: 10px;
 }
+
 /* ====== Responsive for Blog Details ====== */
 @media (max-width: 991px) {
     .blog-content img.post-img {
@@ -1957,7 +2018,8 @@ textarea.pink-focus {
     }
 
     .oldBtn .btn {
-        width: 48%;  /* 2 buttons side by side on tablets */
+        width: 48%;
+        /* 2 buttons side by side on tablets */
         font-size: 14px;
         padding: 10px 15px;
     }
@@ -1981,7 +2043,8 @@ textarea.pink-focus {
         font-size: 18px;
     }
 
-    .fancy-input, .pink-focus {
+    .fancy-input,
+    .pink-focus {
         padding: 10px 15px;
         font-size: 14px;
     }
@@ -2019,7 +2082,8 @@ textarea.pink-focus {
         padding: 15px;
     }
 
-    .fancy-input, .pink-focus {
+    .fancy-input,
+    .pink-focus {
         padding: 8px 12px;
         font-size: 13px;
     }
@@ -2090,8 +2154,34 @@ textarea.pink-focus {
     position: relative;
 }
 
+.carousel-item {
+    position: relative;  
+}
+
+.cont {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+}
+
+.aboutTitle {
+    font-size: 42px !important;
+    font-weight: 600 !important;
+}
+
+.aboutTtext {
+    font-size: 16px !important;
+    margin-top: 10px !important;
+    color: #fcd75d !important;
+}
+
 .about-content {
     padding-left: 40px;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
 .about-title {
@@ -2101,22 +2191,28 @@ textarea.pink-focus {
     margin-bottom: 15px;
     font-style: italic;
 }
+
 .aboutus-title {
-    font-family: "Indie Flower", cursive;
-  font-weight: 400;
+    font-weight: 400;
     font-size: 32px;
     font-weight: 600;
     color: #fcfcfc;
     margin-bottom: 15px;
     font-style: italic;
 }
+
+.aboutTitle {
+    font-size: 36px;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
 .aboutTtext {
-    font-family: "Playfair", serif;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.8;
     color: #fcd75d;
     margin-bottom: 20px;
-    font-weight: 500;
 }
 
 .about-title-underline {
@@ -2221,9 +2317,11 @@ textarea.pink-focus {
     0% {
         transform: translateX(0) translateY(0);
     }
+
     50% {
         transform: translateX(-25%) translateY(-5px);
     }
+
     100% {
         transform: translateX(-50%) translateY(0);
     }
@@ -2411,4 +2509,32 @@ textarea.pink-focus {
     .footer-copyright {
         font-size: 0.8rem;
     }
+}
+
+/* Back to top button */
+#backToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#ff6b9a,#d63f73);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    transition: transform .18s ease, opacity .18s ease;
+    border: none;
+}
+
+#backToTop i { font-size: 18px; }
+
+#backToTop:hover { transform: translateY(-3px); opacity: 0.95; }
+
+@media (max-width: 480px) {
+    #backToTop { right: 12px; bottom: 18px; width:44px; height:44px; }
 }
