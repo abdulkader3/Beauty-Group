@@ -158,6 +158,14 @@
 .section1 .carousel-fade .carousel-item.active {
     opacity: 1;
 }
+.bannerimg{
+    background-image: url(/Photos/3.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(178, 16, 16);
+  
+}
 
 .section1 .carousel-caption {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
