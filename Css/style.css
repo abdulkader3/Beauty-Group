@@ -2157,12 +2157,23 @@ textarea.pink-focus {
 .carousel-item {
     position: relative;  
 }
-
-.cont {
-    position: absolute;
-    top: 50%;
-    left: -60px;
+.cont .aboutTitle{
+    color: #7CB342 !important;
 }
+.cont .aboutTtext{
+color: #553737 !important;
+}
+.cont {
+  position: absolute;
+  bottom: 60%;
+  right: 25%;
+  transform: translateY(-60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .aboutTitle {
     font-size: 42px !important;
@@ -2173,15 +2184,6 @@ textarea.pink-focus {
     font-size: 16px !important;
     margin-top: 10px !important;
     color: #fcd75d !important;
-}
-
-.about-content {
-    padding-left: 40px;
-    padding-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
 }
 
 .about-title {
