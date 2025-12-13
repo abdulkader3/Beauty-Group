@@ -106,6 +106,77 @@ backToTop.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
+// WhatsApp Button Functionality with Modal Toggle
+const whatsappBtn = document.getElementById("whatsappBtn");
+if (whatsappBtn) {
+  let modalOpen = false;
+  
+  whatsappBtn.addEventListener("click", () => {
+    const supportOverlay = document.getElementById('bioXinSupport');
+    if (supportOverlay) {
+      modalOpen = !modalOpen;
+      if (modalOpen) {
+        // Open modal
+        supportOverlay.classList.add('active');
+        whatsappBtn.innerHTML = '<i class="fas fa-times"></i>';
+        whatsappBtn.setAttribute('title', 'Close support window');
+      } else {
+        // Close modal
+        supportOverlay.classList.remove('active');
+        whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
+        whatsappBtn.setAttribute('title', 'Contact us on WhatsApp');
+      }
+    }
+  });
+}
 
+// ========================= BIO-XIN SUPPORT MODAL ========================= //
 
+// BIO-XIN Support Modal Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const supportOverlay = document.getElementById('bioXinSupport');
+    const form = document.getElementById('bioXinForm');
+    
+    // Form submission
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nameInput = document.getElementById('bioXinName');
+            const phoneNumber = '+8801970713237';
+            
+            if (nameInput.value.trim()) {
+                // Create WhatsApp message with the user's name
+                const userName = nameInput.value.trim();
+                const message = `${userName}`;
+                const encodedMessage = encodeURIComponent(message);
+                
+                // Create WhatsApp link
+                const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+                
+                // Open WhatsApp in new tab
+                window.open(whatsappLink, '_blank');
+                
+                // Reset form and close modal
+                form.reset();
+                supportOverlay.classList.remove('active');
+                const whatsappBtn = document.getElementById('whatsappBtn');
+                if (whatsappBtn) {
+                    whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
+                    whatsappBtn.setAttribute('title', 'Contact us on WhatsApp');
+                }
+                
+                console.log('WhatsApp message sent with name:', userName);
+            }
+        });
+    }
+});
 
+// Optional: Show modal on page load (uncomment if needed)
+// window.addEventListener('load', function() {
+//     const supportOverlay = document.getElementById('bioXinSupport');
+//     if (supportOverlay) {
+//         supportOverlay.style.display = 'flex';
+//     }
+// });
+
+// ========================= END BIO-XIN SUPPORT MODAL ========================= //

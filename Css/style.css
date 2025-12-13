@@ -1912,6 +1912,33 @@ textarea.pink-focus {
     background: #e04379;
 }
 
+/* ========================= WHATSAPP BUTTON ========================= */
+
+#whatsappBtn {
+    position: fixed;
+    bottom: 80px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    background: #03210e;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+#whatsappBtn:hover {
+    background: #052411;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(37, 211, 102, 0.4);
+}
 
 /* ========================= ABOUT US SECTION ========================= */
 
@@ -2261,3 +2288,242 @@ textarea.pink-focus {
         font-size: 0.8rem;
     }
 }
+/* ========================= BIO-XIN SUPPORT MODAL ========================= */
+
+/* Overlay Background */
+.bio-xin-support-overlay {
+    position: fixed;
+    bottom: 150px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    background: transparent;
+    display: none;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 9999;
+    padding: 0px;
+    pointer-events: none;
+}
+
+.bio-xin-support-overlay.active {
+    display: flex;
+    pointer-events: auto;
+}
+
+/* Main Container */
+.bio-xin-support-container {
+    background: white;
+    border-radius: 16px;
+    max-width: 320px;
+    width: 320px;
+    max-height: 480px;
+    height: auto;
+    padding: 20px 20px 20px 20px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.4s ease-out;
+    overflow: hidden;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px) translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+/* Close Button */
+.bio-xin-close-btn {
+    display: none;
+}
+
+/* Logo Section */
+.bio-xin-logo-section {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bio-xin-logo-placeholder {
+    width: 50px;
+    height: 50px;
+    background: #f5f5f5;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #999;
+    font-weight: 600;
+}
+
+/* Title */
+.bio-xin-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin: 0 0 5px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Subtitle */
+.bio-xin-subtitle {
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 0 15px 0;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form Wrapper */
+.bio-xin-form-wrapper {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #f0f0f0;
+}
+
+/* Form Title */
+.bio-xin-form-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin: 0 0 12px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form */
+.bio-xin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Form Group */
+.bio-xin-form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Field */
+.bio-xin-input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+    background: #fafafa;
+    color: #333;
+}
+
+.bio-xin-input::placeholder {
+    color: #999;
+}
+
+.bio-xin-input:focus {
+    outline: none;
+    border-color: #d4a5a5;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(212, 165, 165, 0.1);
+}
+
+/* Agreement Text */
+.bio-xin-agreement-text {
+    font-size: 10px;
+    color: #666;
+    text-align: center;
+    margin: 8px 0;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Links in Agreement */
+.bio-xin-link {
+    color: #333;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.bio-xin-link:hover {
+    color: #d4a5a5;
+    text-decoration: none;
+}
+
+/* Submit Button */
+.bio-xin-submit-btn {
+    width: 100%;
+    padding: 8px 12px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0.3px;
+    margin-top: 5px;
+}
+
+.bio-xin-submit-btn:hover {
+    background: #222;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bio-xin-submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .bio-xin-support-container {
+        padding: 40px 20px 25px 20px;
+        max-width: 85vw;
+        width: 85vw;
+    }
+
+    .bio-xin-title {
+        font-size: 22px;
+    }
+
+    .bio-xin-form-wrapper {
+        padding: 15px;
+    }
+
+    .bio-xin-close-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .bio-xin-input {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .bio-xin-submit-btn {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    .bio-xin-logo-placeholder {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* ========================= END BIO-XIN SUPPORT MODAL ========================= */
