@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../Css/style.css">
     <link rel="stylesheet" href="../Css/responsive.css">
+    <!-- Translation Script -->
+    <script src="../JS/translations.js"></script>
     <style>
         .service-hero {
             background: linear-gradient(135deg, #ff5e7e 0%, #ff9a8b 100%);
@@ -100,13 +102,15 @@
                 </span>
             </a>
             <ul class="sticky-navbar-nav">
-                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/">Home</a></li>
-                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/">Collection</a></li>
-                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/">Services</a></li>
+                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/" data-i18n="nav-home">Home</a></li>
+                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/" data-i18n="nav-herbal">Collection</a></li>
+                <li class="sticky-nav-item"><a class="sticky-nav-link" href="/" data-i18n="nav-services">Services</a></li>
             </ul>
             <div class="sticky-navbar-icons">
-                <span class="LANGUAGE">ENG</span>
-                <span class="LANGUAGE">BNG</span>
+                <div class="language-toggle">
+                    <button class="lang-btn active" id="langBtnEng" onclick="window.languageManager.setLanguage('en')">ENG</button>
+                    <button class="lang-btn" id="langBtnBng" onclick="window.languageManager.setLanguage('bn')">BNG</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -114,38 +118,38 @@
     <!-- Service Hero Section -->
     <div class="service-hero">
         <div class="container">
-            <h1>Aromatherapy</h1>
-            <p>Healing through the therapeutic power of natural essential oils</p>
+            <h1 data-i18n="aromatherapy-title">Aromatherapy</h1>
+            <p data-i18n="aromatherapy-desc">Healing through the therapeutic power of natural essential oils</p>
         </div>
     </div>
 
     <!-- Service Content -->
     <div class="service-content">
         <div class="container">
-            <a href="../index.html" class="back-btn">
+            <a href="../index.html" class="back-btn" data-i18n="back-to-packages">
                 <i class="fas fa-arrow-left"></i> Back to Packages
             </a>
 
             <!-- Description Section -->
             <div class="service-section">
-                <h2>What is Aromatherapy?</h2>
+                <h2 data-i18n="service-what-is">What is Aromatherapy?</h2>
                 <p>Aromatherapy is a holistic healing treatment that uses natural plant extracts and essential oils to promote physical and mental wellbeing. Our aromatherapy sessions combine therapeutic massage with carefully selected essential oils chosen for your specific needs, creating a deeply relaxing and rejuvenating experience.</p>
             </div>
 
             <!-- Benefits Section -->
             <div class="service-section">
-                <h2>Key Benefits</h2>
+                <h2 data-i18n="service-benefits">Key Benefits</h2>
                 <div class="benefit-item">
                     <i class="fas fa-wind"></i>
-                    <p><strong>Stress Relief:</strong> Essential oils help calm the mind and reduce anxiety</p>
+                    <p><strong data-i18n="benefit-stress-relief">Stress Relief:</strong> <span data-i18n="benefit-stress-relief-desc">Essential oils help calm the mind and reduce anxiety</span></p>
                 </div>
                 <div class="benefit-item">
                     <i class="fas fa-brain"></i>
-                    <p><strong>Mental Clarity:</strong> Improve focus and emotional balance</p>
+                    <p><strong data-i18n="benefit-mental-clarity">Mental Clarity:</strong> <span data-i18n="benefit-mental-clarity-desc">Improve focus and emotional balance</span></p>
                 </div>
                 <div class="benefit-item">
                     <i class="fas fa-heart"></i>
-                    <p><strong>Physical Healing:</strong> Natural oils support immune and respiratory health</p>
+                    <p><strong data-i18n="benefit-physical-healing">Physical Healing:</strong> <span>Natural oils support immune and respiratory health</span></p>
                 </div>
                 <div class="benefit-item">
                     <i class="fas fa-moon"></i>
@@ -159,7 +163,7 @@
 
             <!-- Treatment Details -->
             <div class="service-section">
-                <h2>Treatment Details</h2>
+                <h2 data-i18n="service-duration-title">Treatment Details</h2>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"><strong>Duration:</strong> 60 minutes</li>
                     <li class="list-group-item"><strong>Frequency:</strong> Weekly or bi-weekly</li>
@@ -195,7 +199,7 @@
 
             <!-- Session Experience -->
             <div class="service-section">
-                <h2>What to Expect</h2>
+                <h2 data-i18n="aromatherapy-process">What to Expect</h2>
                 <div class="benefit-item">
                     <i class="fas fa-check"></i>
                     <p>Initial consultation to determine your needs and preferences</p>

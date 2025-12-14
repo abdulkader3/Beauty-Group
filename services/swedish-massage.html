@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../Css/style.css">
     <link rel="stylesheet" href="../Css/responsive.css">
+    <!-- Translation Script -->
+    <script src="../JS/translations.js"></script>
     <style>
         .service-hero {
             background: linear-gradient(135deg, #ff5e7e 0%, #ff9a8b 100%);
@@ -95,8 +97,10 @@
                 <li class="sticky-nav-item"><a class="sticky-nav-link" href="/">Services</a></li>
             </ul>
             <div class="sticky-navbar-icons">
-                <span class="LANGUAGE">ENG</span>
-                <span class="LANGUAGE">BNG</span>
+                <div class="language-toggle">
+                    <button class="lang-btn active" id="langBtnEng" onclick="window.languageManager.setLanguage('en')">ENG</button>
+                    <button class="lang-btn" id="langBtnBng" onclick="window.languageManager.setLanguage('bn')">BNG</button>
+                </div>
             </div>
         </div>
     </nav>
@@ -104,27 +108,27 @@
     <!-- Service Hero Section -->
     <div class="service-hero">
         <div class="container">
-            <h1>Swedish Massage</h1>
-            <p>Classic therapeutic massage for complete body relaxation</p>
+            <h1 data-i18n="swedish-massage-title">Swedish Massage</h1>
+            <p data-i18n="swedish-massage-desc">Classic therapeutic massage for complete body relaxation</p>
         </div>
     </div>
 
     <!-- Service Content -->
     <div class="service-content">
         <div class="container">
-            <a href="../index.html" class="back-btn">
+            <a href="../index.html" class="back-btn" data-i18n="back-to-packages">
                 <i class="fas fa-arrow-left"></i> Back to Packages
             </a>
 
             <!-- Description Section -->
             <div class="service-section">
-                <h2>What is Swedish Massage?</h2>
+                <h2 data-i18n="swedish-massage-what-is">What is Swedish Massage?</h2>
                 <p>Swedish Massage is the most popular massage therapy technique worldwide. It uses long gliding strokes, kneading, friction, tapping, and vibration to relax muscles, improve circulation, and promote overall wellness. This classic technique is perfect for stress relief and muscle relaxation.</p>
             </div>
 
             <!-- Benefits Section -->
             <div class="service-section">
-                <h2>Key Benefits</h2>
+                <h2 data-i18n="service-benefits">Key Benefits</h2>
                 <div class="benefit-item">
                     <i class="fas fa-spa"></i>
                     <p><strong>Stress Relief:</strong> Deeply relaxing massage melts away tension</p>

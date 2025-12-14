@@ -395,6 +395,39 @@
     padding-left: 2rem;
     white-space: nowrap;
     margin-left: auto;
+    align-items: center;
+}
+
+/* Language Toggle Buttons */
+.language-toggle {
+    display: inline-flex;
+    gap: 0;
+    background: #f5f5f5;
+    border-radius: 6px;
+    padding: 2px;
+    border: 1px solid #ddd;
+}
+
+.lang-btn {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.lang-btn.active {
+    background: #ff5e7e;
+    color: white;
+    box-shadow: 0 2px 4px rgba(255, 94, 126, 0.2);
+}
+
+.lang-btn:hover:not(.active) {
+    color: #333;
 }
 
 .sticky-navbar-toggler {

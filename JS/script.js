@@ -180,3 +180,11 @@ document.addEventListener('DOMContentLoaded', function() {
 // });
 
 // ========================= END BIO-XIN SUPPORT MODAL ========================= //
+// Language Management System Integration
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait for translations.js to be loaded
+    if (typeof window.languageManager !== 'undefined') {
+        // Language manager is already initialized
+        console.log('Language manager initialized');
+    }
+});
