@@ -533,3 +533,7 @@
     }
 
 }
+
+html, body {
+  touch-action: manipulation;
+}

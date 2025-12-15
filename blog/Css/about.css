@@ -343,3 +343,8 @@ body {
 }
 
 /* <!----- Our Team css end-----> */
+
+
+html, body {
+  touch-action: manipulation;
+}
