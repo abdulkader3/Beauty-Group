@@ -129,7 +129,7 @@ const translations = {
         
         // Carousel Captions
         'carousel-beautiful': 'Beautiful Products',
-        'carousel-beautiful-desc': 'Premium quality beauty products for you',
+        'carousel-beautiful-desc': 'Premium quality beauty products for you Elit pellentesque habitant morbi tristique. Tellus at urna condimentum mattis pellentesque id nibh tortor ',
         'carousel-natural': 'Natural Ingredients',
         'carousel-natural-desc': 'Made with nature\'s finest ingredients',
         'carousel-herbal': 'Herbal Collection',
