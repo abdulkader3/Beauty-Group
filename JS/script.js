@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     }
 
-    /* ========= BACK TO TOP ========= */
+ /* ========= BACK TO TOP ========= */
     const backToTop = document.getElementById('backToTop');
     if (backToTop) {
         backToTop.style.display = 'none';
